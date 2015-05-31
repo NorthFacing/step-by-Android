@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <!-- application -->
+    <string name="hz_app_lable">手机显示的进程名称</string>
+    
+    <!-- main activity -->
+    <!-- manifest配置 -->
+    <string name="hz_app_name">程序名</string>
+    <string name="hz_app_settings">设置</string>
+    
+    <!-- Button -->
+    <string name="hz_button_lable">按钮lable</string>
+    <string name="hz_button_text">点我</string>
+</resources>
