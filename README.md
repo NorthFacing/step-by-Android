@@ -1,5 +1,8 @@
 ## stepByAndroid
+
 Android学习项目笔记
+
+D:/java/eclipseAndroid/workspace/stepByAndroid
 
 ## SDK 版本要求
 - **Minimum Required SDK**：  API 14 - Android 4.0
