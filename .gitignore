@@ -3,3 +3,9 @@
 .classpath
 */bin
 .settings
+
+.idea
+*.iml
+
+.gradle
+
