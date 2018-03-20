@@ -1,6 +1,6 @@
 ## stepByAndroid
 
-* [Android官方培训课程中文版](http://hukai.me/android-training-course-in-chinese/index.html)
+* [Android官方培训课程中文版](https://developer.android.com/guide/index.html)
 * [Android一些重要知识点解析整理](https://github.com/FX-Max/Point-of-Android)
 * [Android UI/UX库](https://github.com/wasabeef/awesome-android-ui)
 * [picasso](http://square.github.io/picasso/)、[glide](https://github.com/bumptech/glide) （两个图片加载库）
