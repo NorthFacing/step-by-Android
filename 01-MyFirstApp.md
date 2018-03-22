@@ -34,6 +34,11 @@ chmod +x gradlew
 * 空返回值
 * 以 View 作为唯一参数（它是之前点击的 View 对象）
 
+获取组件绑定的值：
+* EditText editText = (EditText) findViewById(R.id.editText);
+* String message = editText.getText().toString();
+* intent.putExtra(EXTRA_MESSAGE, message);
+
 ### Intent
 
 Intent 是指在相互独立的组件（如两个 Activity）之间提供运行时绑定功能的对象。Intent 表示一个应用“执行某项操作的意向”。您可以将 intent 用于各种任务，但在本课中，您的 intent 用于启动另一个 Activity。
@@ -45,6 +50,14 @@ Intent 是指在相互独立的组件（如两个 Activity）之间提供运行�
 	- intent.putExtra(EXTRA_MESSAGE, message);
 * 调用startActivity方法启动新activity
 	- startActivity(intent);
+
+### 值传递
+* 在接收参数的activity的初始化方法onCreate中可以处理
+* 获取Intent对象：Intent intent = getIntent();
+* 获取具体值：intent.getStringExtra(MainActivity.EXTRA_MESSAGE);
+* 
+
+
 
 
 
