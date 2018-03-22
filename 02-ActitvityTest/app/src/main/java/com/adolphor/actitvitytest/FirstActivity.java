@@ -1,7 +1,9 @@
 package com.adolphor.actitvitytest;
 
+import android.content.Intent;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
+import android.util.Log;
 import android.view.Menu;
 import android.view.MenuItem;
 import android.view.View;
@@ -10,22 +12,50 @@ import android.widget.Toast;
 
 public class FirstActivity extends AppCompatActivity {
 
+    private static final String TAG = "FirstActivity";
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.first_layout);
-        // 获取button1
-        Button button = (Button) findViewById(R.id.button_1);
-        // 增加监听事件
-        button.setOnClickListener(new View.OnClickListener() {
+        setContentView(R.layout.activity_first);
+
+        //
+        Button button1 = (Button) findViewById(R.id.button_1);
+        button1.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                // Toast事件
-                // Toast.makeText(FirstActivity.this, "You clicked Button 1", Toast.LENGTH_SHORT).show();
-                // finish()销毁此activity，相当于退出应用
+                Log.i(TAG, "onClick: button 1");
+            }
+        });
+
+        // Toast事件
+        Button button_pop = (Button) findViewById(R.id.button_pop);
+        button_pop.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Toast.makeText(FirstActivity.this, "You clicked Button 1", Toast.LENGTH_SHORT).show();
+            }
+        });
+
+        // 显式Intent
+        Button button_intent = (Button) findViewById(R.id.button_intent);
+        button_intent.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent = new Intent(FirstActivity.this, SecondActivity.class);
+                startActivity(intent);
+            }
+        });
+
+        // 结束活动
+        Button button_finish = (Button) findViewById(R.id.button_finish);
+        button_finish.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
                 finish();
             }
         });
+
     }
 
     // 复写菜单：return true显示，false 不显示

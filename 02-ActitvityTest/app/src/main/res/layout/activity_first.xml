@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <!--match_parent：父类一样宽-->
+    <!--wrap_content：只要能刚好包含里边的内容就行-->
+    <Button
+        android:id="@+id/button_1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Button 1"/>
+
+    <Button
+        android:id="@+id/button_pop"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Button Pop" />
+
+    <Button
+        android:id="@+id/button_intent"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Button Intent" />
+
+    <Button
+        android:id="@+id/button_finish"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Button Finish" />
+
+</LinearLayout>

@@ -10,17 +10,21 @@
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
 
-        <!--android:label：标题栏内容 & 应用程序显示的名称-->
-        <activity android:name="com.adolphor.actitvitytest.FirstActivity"
+        <!-- android:label：标题栏内容 & 应用程序显示的名称 -->
+        <activity
+            android:name=".FirstActivity"
             android:label="This is first Activity">
-            <!--过滤标签-->
+
+            <!-- 过滤标签 -->
             <intent-filter>
-                <!--action.MAIN：主活动-->
-                <action android:name="android.intent.action.MAIN"/>
-                <!--category.LAUNCHER：启动器-->
-                <category android:name="android.intent.category.LAUNCHER"/>
+
+                <!-- action.MAIN：主活动 -->
+                <action android:name="android.intent.action.MAIN" />
+                <!-- category.LAUNCHER：启动器 -->
+                <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
+        <activity android:name=".SecondActivity"></activity>
     </application>
 
 </manifest>
