@@ -30,6 +30,18 @@
         android:text="Button Implicit Intent" />
 
     <Button
+        android:id="@+id/button_intent_web_view"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Button Web View" />
+
+    <Button
+        android:id="@+id/button_tel"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Button Tel" />
+
+    <Button
         android:id="@+id/button_finish"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
