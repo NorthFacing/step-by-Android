@@ -7,5 +7,7 @@
 .idea
 *.iml
 
+build
+
 .gradle
 
