@@ -14,17 +14,22 @@
         <activity
             android:name=".FirstActivity"
             android:label="This is first Activity">
-
-            <!-- 过滤标签 -->
+            <!-- 过滤标签：符合如下条件就会调用此activity -->
             <intent-filter>
-
                 <!-- action.MAIN：主活动 -->
                 <action android:name="android.intent.action.MAIN" />
                 <!-- category.LAUNCHER：启动器 -->
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-        <activity android:name=".SecondActivity"></activity>
+        <activity android:name=".SecondActivity">
+            <intent-filter>
+                <action android:name="com.adolphor.activitytest.ACTION_START"/>
+                <!--可以配置多个category-->
+                <category android:name="android.intent.category.DEFAULT"/>
+                <category android:name="com.adolphor.activitytest.MY_CATEGORY"/>
+            </intent-filter>
+        </activity>
     </application>
 
 </manifest>

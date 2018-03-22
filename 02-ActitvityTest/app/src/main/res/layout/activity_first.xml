@@ -18,10 +18,16 @@
         android:text="Button Pop" />
 
     <Button
-        android:id="@+id/button_intent"
+        android:id="@+id/button_explicit_intent"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="Button Intent" />
+        android:text="Button Explicit Intent" />
+
+    <Button
+        android:id="@+id/button_implicit_intent"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Button Implicit Intent" />
 
     <Button
         android:id="@+id/button_finish"

@@ -38,11 +38,22 @@ public class FirstActivity extends AppCompatActivity {
         });
 
         // 显式Intent
-        Button button_intent = (Button) findViewById(R.id.button_intent);
-        button_intent.setOnClickListener(new View.OnClickListener() {
+        Button button_explicit_intent = (Button) findViewById(R.id.button_explicit_intent);
+        button_explicit_intent.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
                 Intent intent = new Intent(FirstActivity.this, SecondActivity.class);
+                startActivity(intent);
+            }
+        });
+
+        // 隐式Intent
+        Button button_implicit_intent = (Button) findViewById(R.id.button_implicit_intent);
+        button_implicit_intent.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent = new Intent("com.adolphor.activitytest.ACTION_START");
+                intent.addCategory("com.adolphor.activitytest.MY_CATEGORY");
                 startActivity(intent);
             }
         });
