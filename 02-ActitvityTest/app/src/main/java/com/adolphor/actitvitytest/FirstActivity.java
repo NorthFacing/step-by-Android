@@ -82,25 +82,49 @@ public class FirstActivity extends AppCompatActivity {
         });
 
         // Intent：向下传递数据
-        Button button_extra = findViewById(R.id.button_extra_data);
-        button_extra.setOnClickListener(new View.OnClickListener() {
+        Button button_requst = findViewById(R.id.button_requst_data);
+        button_requst.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
                 Intent intent = new Intent(FirstActivity.this, SecondActivity.class);
-                intent.putExtra("extra_data","Hello SecondActivity");
+                intent.putExtra("extra_data", "Hello SecondActivity");
                 startActivity(intent);
             }
         });
 
+        // Intent：接收返回数据
+        Button button_response = findViewById(R.id.button_response_data);
+        button_response.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent = new Intent(FirstActivity.this, SecondActivity.class);
+                // 这个 requstCode 用于 onActivityResult 接收返回值的时候确定数据来源
+                startActivityForResult(intent, 1);
+            }
+        });
+
         // 结束活动
-        Button button_finish = (Button) findViewById(R.id.button_finish);
+        Button button_finish = findViewById(R.id.button_finish);
         button_finish.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
                 finish();
             }
         });
+    }
 
+    // 使用 startActivityForResult 启动activity，就需要覆写 onActivityResult 处理返回的数据
+    @Override
+    protected void onActivityResult(int requestCode, int resultCode, Intent data) {
+        switch (requestCode) {
+            case 1:
+                if (resultCode == RESULT_OK) {
+                    String returnData = data.getStringExtra("return_data");
+                    Log.d(TAG, "onActivityResult: " + returnData);
+                }
+                break;
+            default:
+        }
     }
 
     // 复写菜单：return true显示，false 不显示

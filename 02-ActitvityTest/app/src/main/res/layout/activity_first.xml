@@ -42,10 +42,16 @@
         android:text="Button Tel" />
 
     <Button
-        android:id="@+id/button_extra_data"
+        android:id="@+id/button_requst_data"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="Button Extra Data" />
+        android:text="Button Requst Data" />
+
+    <Button
+        android:id="@+id/button_response_data"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Button Response Data" />
 
     <Button
         android:id="@+id/button_finish"
