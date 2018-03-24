@@ -81,6 +81,17 @@ public class FirstActivity extends AppCompatActivity {
             }
         });
 
+        // Intent：向下传递数据
+        Button button_extra = findViewById(R.id.button_extra_data);
+        button_extra.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent = new Intent(FirstActivity.this, SecondActivity.class);
+                intent.putExtra("extra_data","Hello SecondActivity");
+                startActivity(intent);
+            }
+        });
+
         // 结束活动
         Button button_finish = (Button) findViewById(R.id.button_finish);
         button_finish.setOnClickListener(new View.OnClickListener() {

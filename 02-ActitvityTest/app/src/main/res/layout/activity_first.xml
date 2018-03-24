@@ -42,6 +42,12 @@
         android:text="Button Tel" />
 
     <Button
+        android:id="@+id/button_extra_data"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Button Extra Data" />
+
+    <Button
         android:id="@+id/button_finish"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
