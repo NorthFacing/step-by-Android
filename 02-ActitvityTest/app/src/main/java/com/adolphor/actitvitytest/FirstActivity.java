@@ -2,7 +2,6 @@ package com.adolphor.actitvitytest;
 
 import android.content.Intent;
 import android.net.Uri;
-import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.util.Log;
 import android.view.Menu;
@@ -11,7 +10,7 @@ import android.view.View;
 import android.widget.Button;
 import android.widget.Toast;
 
-public class FirstActivity extends AppCompatActivity {
+public class FirstActivity extends BaseActivity {
 
     private static final String TAG = "FirstActivity";
 
@@ -100,6 +99,15 @@ public class FirstActivity extends AppCompatActivity {
                 Intent intent = new Intent(FirstActivity.this, SecondActivity.class);
                 // 这个 requstCode 用于 onActivityResult 接收返回值的时候确定数据来源
                 startActivityForResult(intent, 1);
+            }
+        });
+
+
+        Button button_params = findViewById(R.id.button_params);
+        button_params.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                SecondActivity.actionStart(FirstActivity.this, "param data 1", "param data 2");
             }
         });
 

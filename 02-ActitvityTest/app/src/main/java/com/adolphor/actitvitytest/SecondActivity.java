@@ -1,13 +1,13 @@
 package com.adolphor.actitvitytest;
 
+import android.content.Context;
 import android.content.Intent;
-import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.util.Log;
 import android.view.View;
 import android.widget.Button;
 
-public class SecondActivity extends AppCompatActivity {
+public class SecondActivity extends BaseActivity {
 
     private static final String TAG = "SecondActivity";
 
@@ -40,8 +40,16 @@ public class SecondActivity extends AppCompatActivity {
 
     private void responseOprt() {
         Intent respIntent = new Intent();
-        respIntent.putExtra("return_data","Hello FirstActivity");
-        setResult(RESULT_OK,respIntent);
+        respIntent.putExtra("return_data", "Hello FirstActivity");
+        setResult(RESULT_OK, respIntent);
         finish();
+    }
+
+    // 最佳实践：参数传递，button_params 对应方法
+    public static void actionStart(Context context, String data1, String data2) {
+        Intent intent = new Intent(context, SecondActivity.class);
+        intent.putExtra("param1",data1);
+        intent.putExtra("param2",data2);
+        context.startActivity(intent);
     }
 }
