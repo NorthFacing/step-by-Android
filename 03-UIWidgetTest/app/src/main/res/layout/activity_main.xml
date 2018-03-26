@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <!--android:gravity：对齐方式-->
+    <!--android:textSize：字体大小，单位：sp-->
+    <!--android:textColor：字体颜色-->
+    <TextView
+        android:id="@+id/text_view"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:text="This is TextView"
+        android:textColor="#00ff00"
+        android:textSize="24sp" />
+
+    <!--android:hint：提示语-->
+    <EditText
+        android:id="@+id/edit_text"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Type something here"
+        android:maxLines="3" />
+
+    <!--android:textAllCaps：禁止大小写自动转换-->
+    <Button
+        android:id="@+id/button_toast"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Button Toast EditText"
+        android:textAllCaps="false" />
+
+    <!--android:visibility：控件的可见性，有三个选项：visible，invisible，gone-->
+    <ProgressBar
+        android:id="@+id/progress_bar"
+        style="?android:attr/progressBarStyleHorizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:max="100"
+        android:visibility="visible" />
+
+    <Button
+        android:id="@+id/button_progress"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Button progress bar"
+        android:textAllCaps="false" />
+
+    <Button
+        android:id="@+id/button_alert_dialog"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Button alert dialog"
+        android:textAllCaps="false"/>
+
+    <Button
+        android:id="@+id/button_progress_dialog"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Button progress dialog"
+        android:textAllCaps="false"/>
+
+    <ImageView
+        android:id="@+id/image_view"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:src="@drawable/img01" />
+
+    <Button
+        android:id="@+id/button_image"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Button Change Image"
+        android:textAllCaps="false" />
+
+    <TextView
+        android:id="@+id/text_view_bottom"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:text="This is bottom TextView" />
+
+</LinearLayout>
