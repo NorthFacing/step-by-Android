@@ -19,7 +19,14 @@
         <activity
             android:name=".WidgetActivity"
             android:label="@string/title_activity_widget"
-            android:theme="@style/AppTheme.NoActionBar"></activity>
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity android:name=".layout.LayoutActivity" />
+        <activity android:name=".layout.linear.Linear02LayoutActivity" />
+        <activity android:name=".layout.linear.Linear01LayoutActivity" />
+        <activity android:name=".layout.linear.Linear00LayoutActivity" />
+        <activity android:name=".layout.relative.Relative00LayoutActivity" />
+        <activity android:name=".layout.relative.Relative01LayoutActivity" />
+        <activity android:name=".layout.relative.Relative02LayoutActivity"></activity>
     </application>
 
 </manifest>

@@ -1,11 +1,12 @@
 package com.adolphor.uiwidgettest;
 
-import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.util.Log;
 import android.view.View;
 
-public class MainActivity extends AppCompatActivity implements View.OnClickListener {
+import com.adolphor.uiwidgettest.layout.LayoutActivity;
+
+public class MainActivity extends BaseActivity {
 
     private static final String TAG = "MainActivity";
 
@@ -14,8 +15,11 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
 
-        View buttonWidget = findViewById(R.id.button_widget);
+        View buttonWidget = findViewById(R.id.btn_widget);
         buttonWidget.setOnClickListener(this);
+
+        View buttonLayout = findViewById(R.id.btn_layout);
+        buttonLayout.setOnClickListener(this);
 
     }
 
@@ -23,12 +27,17 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
     @Override
     public void onClick(View v) {
         switch (v.getId()) {
-            case R.id.button_widget:
+            case R.id.btn_widget:
                 WidgetActivity.actionStart(MainActivity.this);
                 Log.d(TAG, "onClick: button_widget");
+                break;
+            case R.id.btn_layout:
+                LayoutActivity.actionStart(MainActivity.this);
+                Log.d(TAG, "onClick: button_layout");
                 break;
             default:
                 break;
         }
     }
+
 }
