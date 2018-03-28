@@ -26,7 +26,13 @@
         <activity android:name=".layout.linear.Linear00LayoutActivity" />
         <activity android:name=".layout.relative.Relative00LayoutActivity" />
         <activity android:name=".layout.relative.Relative01LayoutActivity" />
-        <activity android:name=".layout.relative.Relative02LayoutActivity"></activity>
+        <activity android:name=".layout.relative.Relative02LayoutActivity" />
+        <activity android:name=".layout.frame.Frame00LayoutActivity" />
+        <activity android:name=".layout.frame.Frame01LayoutActivity" />
+        <activity android:name=".layout.percent.Percent00LayoutActivity" />
+        <activity android:name=".layout.percent.PercentFrameLayoutActivity" />
+        <activity android:name=".layout.percent.PercentRelativeLayoutActivity" />
+        <activity android:name=".layout.constraint.Constraint00LayoutActivity"></activity>
     </application>
 
 </manifest>

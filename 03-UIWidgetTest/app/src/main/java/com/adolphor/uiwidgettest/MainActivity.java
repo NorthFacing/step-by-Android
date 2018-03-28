@@ -36,6 +36,7 @@ public class MainActivity extends BaseActivity {
                 Log.d(TAG, "onClick: button_layout");
                 break;
             default:
+                Log.e(TAG, "onClick: 找不到对应触发事件", new NullPointerException("onClick: 找不到对应触发事件"));
                 break;
         }
     }

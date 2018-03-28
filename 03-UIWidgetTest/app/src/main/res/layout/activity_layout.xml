@@ -18,5 +18,26 @@
         android:text="RelativeLayout Demo"
         android:textAllCaps="false" />
 
+    <Button
+        android:id="@+id/btn_layout_frame"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="FrameLayout Demo"
+        android:textAllCaps="false" />
+
+    <Button
+        android:id="@+id/btn_layout_percent"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="PercentLayout Demo"
+        android:textAllCaps="false" />
+
+    <Button
+        android:id="@+id/btn_layout_constraint"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="ConstraintLayout Demo"
+        android:textAllCaps="false" />
+
 </LinearLayout>
 

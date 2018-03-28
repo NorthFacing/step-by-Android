@@ -109,6 +109,7 @@ public class WidgetActivity extends BaseActivity {
                 // progressDialog.dismiss(); // 加载完毕之后可以使用此方法关闭dialog
                 break;
             default:
+                Log.e(TAG, "onClick: 找不到对应触发事件", new NullPointerException("onClick: 找不到对应触发事件"));
                 break;
         }
     }

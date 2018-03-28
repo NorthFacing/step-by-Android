@@ -5,13 +5,13 @@
     android:orientation="vertical">
 
     <Button
-        android:id="@+id/button1"
+        android:id="@+id/frameBtn"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="水平布局范例" />
 
     <Button
-        android:id="@+id/button2"
+        android:id="@+id/relativeBtn"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="自适应宽度范例" />

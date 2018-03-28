@@ -8,13 +8,8 @@
         android:id="@+id/frameBtn"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="相对于父类布局" />
-
-    <Button
-        android:id="@+id/relativeBtn"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="相对于兄弟类布局" />
+        android:text="frameLayout demo"
+        android:textAllCaps="false" />
 
 </LinearLayout>
 
