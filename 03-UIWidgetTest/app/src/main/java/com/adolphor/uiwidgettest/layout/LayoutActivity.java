@@ -14,6 +14,7 @@ import com.adolphor.uiwidgettest.layout.custom.Custom01IncludeActivity;
 import com.adolphor.uiwidgettest.layout.custom.Custom02TitleLayoutActivity;
 import com.adolphor.uiwidgettest.layout.frame.Frame00LayoutActivity;
 import com.adolphor.uiwidgettest.layout.linear.Linear00LayoutActivity;
+import com.adolphor.uiwidgettest.layout.listView.ListView00Activity;
 import com.adolphor.uiwidgettest.layout.percent.Percent00LayoutActivity;
 import com.adolphor.uiwidgettest.layout.relative.Relative00LayoutActivity;
 
@@ -52,6 +53,9 @@ public class LayoutActivity extends BaseActivity {
         View buttonCustom = findViewById(R.id.btn_layout_custom);
         buttonCustom.setOnClickListener(this);
 
+        View listView = findViewById(R.id.btn_layout_listView);
+        listView.setOnClickListener(this);
+
     }
 
     @Override
@@ -77,6 +81,9 @@ public class LayoutActivity extends BaseActivity {
                 break;
             case R.id.btn_layout_custom:
                 Custom02TitleLayoutActivity.actionStart(this);
+                break;
+            case R.id.btn_layout_listView:
+                ListView00Activity.actionStart(this);
                 break;
             default:
                 Log.e(TAG, "onClick: 找不到对应触发事件", new NullPointerException("onClick: 找不到对应触发事件"));

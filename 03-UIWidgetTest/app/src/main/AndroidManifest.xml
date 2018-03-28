@@ -34,7 +34,10 @@
         <activity android:name=".layout.percent.PercentRelativeLayoutActivity" />
         <activity android:name=".layout.constraint.Constraint00LayoutActivity" />
         <activity android:name=".layout.custom.Custom01IncludeActivity" />
-        <activity android:name=".layout.custom.Custom02TitleLayoutActivity"></activity>
+        <activity android:name=".layout.custom.Custom02TitleLayoutActivity" />
+        <activity android:name=".layout.listView.ListView00Activity" />
+        <activity android:name=".layout.listView.ListView01Activity" />
+        <activity android:name=".layout.listView.ListView02Activity"></activity>
     </application>
 
 </manifest>
