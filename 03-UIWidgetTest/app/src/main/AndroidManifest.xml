@@ -32,7 +32,9 @@
         <activity android:name=".layout.percent.Percent00LayoutActivity" />
         <activity android:name=".layout.percent.PercentFrameLayoutActivity" />
         <activity android:name=".layout.percent.PercentRelativeLayoutActivity" />
-        <activity android:name=".layout.constraint.Constraint00LayoutActivity"></activity>
+        <activity android:name=".layout.constraint.Constraint00LayoutActivity" />
+        <activity android:name=".layout.custom.Custom01IncludeActivity" />
+        <activity android:name=".layout.custom.Custom02TitleLayoutActivity"></activity>
     </application>
 
 </manifest>

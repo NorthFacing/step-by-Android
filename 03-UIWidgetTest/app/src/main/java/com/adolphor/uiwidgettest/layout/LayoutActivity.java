@@ -10,6 +10,8 @@ import android.view.View;
 import com.adolphor.uiwidgettest.BaseActivity;
 import com.adolphor.uiwidgettest.R;
 import com.adolphor.uiwidgettest.layout.constraint.Constraint00LayoutActivity;
+import com.adolphor.uiwidgettest.layout.custom.Custom01IncludeActivity;
+import com.adolphor.uiwidgettest.layout.custom.Custom02TitleLayoutActivity;
 import com.adolphor.uiwidgettest.layout.frame.Frame00LayoutActivity;
 import com.adolphor.uiwidgettest.layout.linear.Linear00LayoutActivity;
 import com.adolphor.uiwidgettest.layout.percent.Percent00LayoutActivity;
@@ -44,6 +46,12 @@ public class LayoutActivity extends BaseActivity {
         View buttonConstraint = findViewById(R.id.btn_layout_constraint);
         buttonConstraint.setOnClickListener(this);
 
+        View buttonInclude = findViewById(R.id.btn_layout_include);
+        buttonInclude.setOnClickListener(this);
+
+        View buttonCustom = findViewById(R.id.btn_layout_custom);
+        buttonCustom.setOnClickListener(this);
+
     }
 
     @Override
@@ -63,6 +71,12 @@ public class LayoutActivity extends BaseActivity {
                 break;
             case R.id.btn_layout_constraint:
                 Constraint00LayoutActivity.actionStart(this);
+                break;
+            case R.id.btn_layout_include:
+                Custom01IncludeActivity.actionStart(this);
+                break;
+            case R.id.btn_layout_custom:
+                Custom02TitleLayoutActivity.actionStart(this);
                 break;
             default:
                 Log.e(TAG, "onClick: 找不到对应触发事件", new NullPointerException("onClick: 找不到对应触发事件"));
