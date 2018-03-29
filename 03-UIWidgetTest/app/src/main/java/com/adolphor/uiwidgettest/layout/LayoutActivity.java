@@ -16,6 +16,7 @@ import com.adolphor.uiwidgettest.layout.frame.Frame00LayoutActivity;
 import com.adolphor.uiwidgettest.layout.linear.Linear00LayoutActivity;
 import com.adolphor.uiwidgettest.layout.listView.ListView00Activity;
 import com.adolphor.uiwidgettest.layout.percent.Percent00LayoutActivity;
+import com.adolphor.uiwidgettest.layout.recyclerView.RecyclerView00Activity;
 import com.adolphor.uiwidgettest.layout.relative.Relative00LayoutActivity;
 
 public class LayoutActivity extends BaseActivity {
@@ -56,6 +57,8 @@ public class LayoutActivity extends BaseActivity {
         View listView = findViewById(R.id.btn_layout_listView);
         listView.setOnClickListener(this);
 
+        findViewById(R.id.btn_layout_recyclerView).setOnClickListener(this);
+
     }
 
     @Override
@@ -84,6 +87,9 @@ public class LayoutActivity extends BaseActivity {
                 break;
             case R.id.btn_layout_listView:
                 ListView00Activity.actionStart(this);
+                break;
+            case R.id.btn_layout_recyclerView:
+                RecyclerView00Activity.actionStart(this);
                 break;
             default:
                 Log.e(TAG, "onClick: 找不到对应触发事件", new NullPointerException("onClick: 找不到对应触发事件"));

@@ -29,7 +29,7 @@ public class ListView02Activity extends BaseActivity implements AdapterView.OnIt
         setContentView(R.layout.activity_list_view02);
 
         initFruit();
-        FruitAdapter adapter = new FruitAdapter(this, R.layout.fruit_item, fruitList);
+        FruitAdapter adapter = new FruitAdapter(this, R.layout.list_view02_fruit_item, fruitList);
         ListView view = findViewById(R.id.listView);
         view.setAdapter(adapter);
         // 注意是另外一个监听实现类：list中的item监听

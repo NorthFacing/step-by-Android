@@ -37,7 +37,9 @@
         <activity android:name=".layout.custom.Custom02TitleLayoutActivity" />
         <activity android:name=".layout.listView.ListView00Activity" />
         <activity android:name=".layout.listView.ListView01Activity" />
-        <activity android:name=".layout.listView.ListView02Activity"></activity>
+        <activity android:name=".layout.listView.ListView02Activity" />
+        <activity android:name=".layout.recyclerView.RecyclerView00Activity" />
+        <activity android:name=".layout.recyclerView.RecyclerView01Activity"></activity>
     </application>
 
 </manifest>
