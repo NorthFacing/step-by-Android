@@ -4,7 +4,9 @@ import android.content.Context;
 import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
+import android.widget.AdapterView;
 import android.widget.ListView;
+import android.widget.Toast;
 
 import com.adolphor.uiwidgettest.BaseActivity;
 import com.adolphor.uiwidgettest.R;
@@ -12,7 +14,7 @@ import com.adolphor.uiwidgettest.R;
 import java.util.ArrayList;
 import java.util.List;
 
-public class ListView02Activity extends BaseActivity {
+public class ListView02Activity extends BaseActivity implements AdapterView.OnItemClickListener {
 
     private List<Fruit> fruitList = new ArrayList<>();
 
@@ -30,11 +32,19 @@ public class ListView02Activity extends BaseActivity {
         FruitAdapter adapter = new FruitAdapter(this, R.layout.fruit_item, fruitList);
         ListView view = findViewById(R.id.listView);
         view.setAdapter(adapter);
+        // 注意是另外一个监听实现类：list中的item监听
+        view.setOnItemClickListener(this);
     }
 
     @Override
     public void onClick(View v) {
 
+    }
+
+    @Override
+    public void onItemClick(AdapterView<?> parent, View view, int position, long id) {
+        Fruit fruit = fruitList.get(position);
+        Toast.makeText(this,fruit.getName(),Toast.LENGTH_SHORT).show();
     }
 
     private void initFruit() {
