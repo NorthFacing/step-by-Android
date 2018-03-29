@@ -15,9 +15,8 @@ public abstract class BaseActivity extends AppCompatActivity implements View.OnC
 
     private static final String TAG = "BaseActivity";
 
-    public static void actionStart(Context context, Object... args) {
-        Intent intent = new Intent(context, BaseActivity.class);
-        context.startActivity(intent);
+    public static void actionStart(Context context) throws Exception {
+        throw new Exception("需要子类中实现此方法");
     }
 
     @Override
